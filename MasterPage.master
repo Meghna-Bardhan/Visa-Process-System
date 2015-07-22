@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #d2
+        {
+            height: 960px;
+            background-color: #cbd7e6;
+            width: 100%;
+        }
+        #d1
+        {
+            height: 110px;
+            background-color: #4a6588;
+            width: 100%;
+        }
+        #d3
+        {
+            height: 45px;
+            background-color: #4a6588;
+            width: 100%;
+        }
+        .style1
+        {
+            width: 100%;
+            float: left;
+            height: 106px;
+        }
+        .style2
+        {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="d1">
+    
+        <table align="center" class="style1">
+            <tr>
+                <td class="style2">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img alt="" src="VISA.png" style="height: 97px; width: 143px" />
+                    &nbsp;</td>
+                <td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="XX-Large" 
+            ForeColor="White" Text="VISA PROCESSING SYSTEM"></asp:Label>
+                    &nbsp;</td>
+            </tr>
+        </table>
+    
+    </div>
+    <div id="d2">
+    
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    
+    </div>
+    <div id="d3">
+    
+    </div>
+    </form>
+</body>
+</html>
